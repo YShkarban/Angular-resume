@@ -1,0 +1,55 @@
+
+
+.info-card {
+  max-width: 400px;
+  min-width: 370px;
+}
+
+.info-card-name {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.text-center {
+  align-items: flex-end;
+}
+
+.rounded-image {
+  border-radius: 20%; /* This will make the image round */
+  width: 160px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+}
+
+
+@media (min-width: 941px) {
+  .rounded-card {
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 1px #00000026;
+    min-width: 280px;
+    position: fixed;
+    top:0;
+  }
+}
+@media (max-width: 940px) {
+  .rounded-card {
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 1px #00000026;
+    min-width: 280px;
+  }
+}
+
+
+
+.button-cv {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px #00000054;
+}
+
+.resume-cards {
+  min-width: 500px;
+}
+
+.mat-mdc-card-title {
+  font-size: 25px;
+}
