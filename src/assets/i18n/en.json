@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Yaroslav Shkarban",
+    "position": "Software Developer",
+    "birthday": "March 13, 1996",
+    "location": "Lodz, Poland",
+    "email": "yarik.shkarban@gmail.com",
+    "phone": "+48 791530721",
+    "downloadCV": "Download CV"
+  },
+  "resume": {
+    "experience": {
+      "title": "Experience",
+      "content": "<strong>Rossmann S.P.z.o.o. - Lodz, Poland</strong><br>Senior Software Developer, July 2018 - Present(6 years)"
+    },
+    "education": {
+      "title": "Education",
+      "content": "<strong>Technical University of Lodz – Poland</strong><br />Bachelor’s degree, June 2019 <br />Mechatronics"
+    },
+    "languages": {
+      "title": "Languages",
+      "ukrLanguage": "Ukrainian",
+      "polLanguage": "Polish",
+      "rusLanguage": "Russian",
+      "engLanguage": "English"
+    },
+    "technologies": {
+      "title": "Technologies",
+      "database": "<h3><strong>DataBase</strong></h3>• Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)<br />• MongoDB <br />• Redis",
+      "frontEnd": "<h3><strong>FrontEnd</strong></h3>• Angular, Typescript<br />• Bootstrap, Material-UI <br />• DevExtreme, DevExpress",
+      "backEnd": "<h3><strong>BackEnd</strong></h3>• C#<br />• Rest API <br />• Clean Architecture, CQRS",
+      "others": "<h3><strong>Other</strong></h3>• Confluence, TFS"
+    }
+  }
+}

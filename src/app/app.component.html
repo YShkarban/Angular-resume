@@ -5,14 +5,16 @@
         <div class="mt-3 text-center">
           <img
             class="rounded-image"
-            src="assets/me.jpg"
+            src="assets/img/me.jpg"
             alt="Description of the image"
           />
         </div>
 
         <mat-card-header class="text-center justify-content-center">
-          <mat-card-title>Yaroslav Shkarban</mat-card-title>
-          <mat-card-subtitle>Software Developer</mat-card-subtitle>
+          <mat-card-title>{{ "info.name" | translate }}</mat-card-title>
+          <mat-card-subtitle>{{
+            "info.position" | translate
+          }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <div class="mb-2 row justify-content-center">
@@ -43,23 +45,23 @@
           </div>
           <div class="row mb-3 text-center">
             <mat-icon style="width: auto">calendar_today</mat-icon>
-            March 13, 1996
+            {{ "info.birthday" | translate }}
           </div>
           <div class="row mb-3 text-center">
             <mat-icon style="width: auto">location_on</mat-icon>
-            Lodz, Poland
+            {{ "info.location" | translate }}
           </div>
           <div class="row mb-3 text-center">
             <mat-icon style="width: auto">alternate_email</mat-icon>
-            yarik.shkarban&#64;gmail.com
+            {{ "info.email" | translate }}
           </div>
           <div class="row mb-3 text-center">
             <mat-icon style="width: auto">smartphone</mat-icon>
-            +48 791530721
+            {{ "info.phone" | translate }}
           </div>
           <div class="mt-4 text-center">
             <button mat-raised-button color="primary" class="button-cv">
-              Download CV
+              {{ "info.downloadCV" | translate }}
             </button>
           </div>
         </mat-card-content>
@@ -68,54 +70,54 @@
     <div class="col">
       <mat-card class="mt-5">
         <mat-card-header>
-          <mat-card-title> Experience </mat-card-title>
+          <mat-card-title>
+            {{ "resume.experience.title" | translate }}
+          </mat-card-title>
         </mat-card-header>
         <mat-card-content class="mt-2">
-          <div>
-            <strong>Rossmann S.P.z.o.o. - Lodz, Poland</strong>
-            <p>Senior Software Developer, July 2018 - Present(6 years)</p>
-          </div>
+          <div [innerHTML]="'resume.experience.content' | translate"></div>
         </mat-card-content>
       </mat-card>
       <div class="row">
         <div class="col-md-7">
           <mat-card class="mt-5">
             <mat-card-header>
-              <mat-card-title> Education </mat-card-title>
+              <mat-card-title>
+                {{ "resume.education.title" | translate }}
+              </mat-card-title>
             </mat-card-header>
             <mat-card-content class="mt-2">
-              <div>
-                <strong>Technical University of Lodz – Poland</strong>
-                <br />Bachelor’s degree, June 2019 <br />Mechatronics
-              </div>
+              <div [innerHTML]="'resume.education.content' | translate"></div>
             </mat-card-content>
           </mat-card>
         </div>
         <div class="col-md-5">
           <mat-card class="mt-5">
             <mat-card-header>
-              <mat-card-title> Languages </mat-card-title>
+              <mat-card-title>
+                {{ "resume.languages.title" | translate }}
+              </mat-card-title>
             </mat-card-header>
             <mat-card-content class="mt-2">
-              Ukrainian
+              {{ "resume.languages.ukrLanguage" | translate }}
               <br /><mat-progress-bar
                 mode="determinate"
                 value="100"
               ></mat-progress-bar>
               <br />
-              Polish
+              {{ "resume.languages.polLanguage" | translate }}
               <br /><mat-progress-bar
                 mode="determinate"
                 value="80"
               ></mat-progress-bar>
               <br />
-              Russian
+              {{ "resume.languages.rusLanguage" | translate }}
               <br /><mat-progress-bar
                 mode="determinate"
                 value="90"
               ></mat-progress-bar>
               <br />
-              English
+              {{ "resume.languages.engLanguage" | translate }}
               <br /><mat-progress-bar
                 mode="determinate"
                 value="70"
@@ -126,30 +128,29 @@
       </div>
       <mat-card class="mt-5 mb-5">
         <mat-card-header>
-          <mat-card-title> Technologies </mat-card-title>
+          <mat-card-title>
+            {{ "resume.technologies.title" | translate }}
+          </mat-card-title>
         </mat-card-header>
         <mat-card-content class="mt-2">
           <div>
             <div class="row">
-              <div class="col">
-                <h3><strong>DataBase</strong></h3>
-                • Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)
-                <br />• MongoDB <br />• Redis
-              </div>
-              <div class="col">
-                <h3><strong>FrontEnd</strong></h3>
-                • Angular, Typescript
-                <br />• Bootstrap, Material-UI <br />• DevExtreme, DevExpress
-              </div>
-              <div class="col">
-                <h3><strong>BackEnd</strong></h3>
-                • C#
-                <br />• Rest API <br />• Clean Architecture, CQRS
-              </div>
-              <div class="col">
-                <h3><strong>Other</strong></h3>
-                • Confluence, TFS
-              </div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6"
+                [innerHTML]="'resume.technologies.database' | translate"
+              ></div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6"
+                [innerHTML]="'resume.technologies.frontEnd' | translate"
+              ></div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6"
+                [innerHTML]="'resume.technologies.backEnd' | translate"
+              ></div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-6"
+                [innerHTML]="'resume.technologies.others' | translate"
+              ></div>
             </div>
           </div>
         </mat-card-content>
