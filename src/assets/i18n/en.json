@@ -11,11 +11,13 @@
   "resume": {
     "experience": {
       "title": "Experience",
-      "content": "<strong>Rossmann S.P.z.o.o. - Lodz, Poland</strong><br>Senior Software Developer, July 2018 - Present(6 years)"
+      "firstJob": "<strong>Rossmann S.P.z.o.o. - Lodz, Poland</strong><br>Senior Software Developer, July 2018 - Present(6 years)",
+      "firstContent": "• Started as an intern and progressed to junior, mid, and senior developer roles.<br/>• Developed desktop applications using WPF C# with DevExpress library.<br/>• Transitioned to creating microservices (REST API) in C#.<br/>• Worked on projects using Angular with Material UI."
     },
     "education": {
       "title": "Education",
-      "content": "<strong>Technical University of Lodz – Poland</strong><br />Bachelor’s degree, June 2019 <br />Mechatronics"
+      "university": "<strong>Technical University of Lodz – Poland</strong><br />Bachelor’s degree, June 2019",
+      "direction": "Mechatronics <br />Degree Project: Simulation of Autonomous Drone Navigation in Space."
     },
     "languages": {
       "title": "Languages",
@@ -26,10 +28,10 @@
     },
     "technologies": {
       "title": "Technologies",
-      "database": "<h3><strong>DataBase</strong></h3>• Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)<br />• MongoDB <br />• Redis",
+      "database": "<h3><strong>DataBase</strong></h3>• Transact-SQL (SQL Server), PL/SQL (Oracle)<br />• MongoDB <br />• Redis",
       "frontEnd": "<h3><strong>FrontEnd</strong></h3>• Angular, Typescript<br />• Bootstrap, Material-UI <br />• DevExtreme, DevExpress",
-      "backEnd": "<h3><strong>BackEnd</strong></h3>• C#<br />• Rest API <br />• Clean Architecture, CQRS",
-      "others": "<h3><strong>Other</strong></h3>• Confluence, TFS"
+      "backEnd": "<h3><strong>BackEnd</strong></h3>• C#<br />• Rest API <br />• Clean Architecture, CQRS <br />• Hangfire",
+      "others": "<h3><strong>Other</strong></h3>• Kubernetes <br />• Confluence, TFS"
     }
   }
 }
