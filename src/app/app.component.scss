@@ -50,3 +50,10 @@
 .full-width {
   min-width: -webkit-fill-available;
 }
+
+
+@media (max-width: 550px) {
+  .cv-details {
+    min-width: 300px;
+  }
+}
