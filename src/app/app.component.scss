@@ -1,3 +1,4 @@
+
 .info-card {
   max-width: 400px;
   min-width: 370px;
@@ -19,7 +20,7 @@
   height: 200px; /* Adjust the height as needed */
 }
 
-@media (min-width: 645px) and (min-height: 600px) {
+@media (min-width: 845px) and (min-height: 600px) {
   .rounded-card {
     position: fixed;
     top: 0;
@@ -38,4 +39,10 @@
 
 .mat-mdc-card-title {
   font-size: 25px;
+}
+
+
+
+.cv-details {
+  min-width: 440px;
 }

@@ -42,15 +42,7 @@
             >
               <mat-icon>code</mat-icon>
             </a>
-          </div>
-          <div class="row mb-3 text-center">
-            <mat-icon style="width: auto">calendar_today</mat-icon>
-            {{ "info.birthday" | translate }}
-          </div>
-          <div class="row mb-3 text-center">
-            <mat-icon style="width: auto">location_on</mat-icon>
-            {{ "info.location" | translate }}
-          </div>
+          </div>          
           <div class="row mb-3 text-center">
             <mat-icon style="width: auto">alternate_email</mat-icon>
             {{ "info.email" | translate }}
@@ -59,15 +51,23 @@
             <mat-icon style="width: auto">smartphone</mat-icon>
             {{ "info.phone" | translate }}
           </div>
+          <div class="row mb-3 text-center">
+            <mat-icon style="width: auto">location_on</mat-icon>
+            {{ "info.location" | translate }}
+          </div>
+          <div class="row mb-3 text-center">
+            <mat-icon style="width: auto">calendar_today</mat-icon>
+            {{ "info.birthday" | translate }}
+          </div>
           <div class="mt-4 text-center">
-            <button mat-raised-button color="primary" class="button-cv">
+            <button mat-raised-button color="primary" class="button-cv button-download">
               {{ "info.downloadCV" | translate }}
             </button>
           </div>
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="col">
+    <div class="col cv-details">
       <mat-card class="mt-5">
         <mat-card-header>
           <mat-card-title>
@@ -131,7 +131,7 @@
               {{ "resume.languages.engLanguage" | translate }}
               <br /><mat-progress-bar
                 mode="determinate"
-                value="70"
+                value="70" [color]="'aqua'"
               ></mat-progress-bar>
             </mat-card-content>
           </mat-card>
