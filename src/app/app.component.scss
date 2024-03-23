@@ -1,5 +1,3 @@
-
-
 .info-card {
   max-width: 400px;
   min-width: 370px;
@@ -21,32 +19,41 @@
   height: 200px; /* Adjust the height as needed */
 }
 
+.cv-details {
+  min-width: 440px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-@media (min-width: 941px) {
+@media (min-width: 861px) and (min-height: 600px) {
   .rounded-card {
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px 1px #00000026;
-    min-width: 280px;
     position: fixed;
-    top:0;
-  }
-}
-@media (max-width: 940px) {
-  .rounded-card {
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px 1px #00000026;
-    min-width: 280px;
+    top: 0;
   }
 }
 
-
+.rounded-card {
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 1px #00000026;
+  min-width: 280px;
+}
 
 .button-cv {
   border-radius: 10px;
   box-shadow: 5px 5px 10px 1px #00000054;
 }
 
-
 .mat-mdc-card-title {
   font-size: 25px;
+}
+
+.full-width {
+  min-width: -webkit-fill-available;
+}
+
+
+@media (max-width: 550px) {
+  .cv-details {
+    min-width: 300px;
+  }
 }
