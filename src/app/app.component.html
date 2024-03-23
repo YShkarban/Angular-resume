@@ -42,7 +42,7 @@
             >
               <mat-icon>code</mat-icon>
             </a>
-          </div>          
+          </div>
           <div class="row mb-3 text-center">
             <mat-icon style="width: auto">alternate_email</mat-icon>
             {{ "info.email" | translate }}
@@ -60,7 +60,11 @@
             {{ "info.birthday" | translate }}
           </div>
           <div class="mt-4 text-center">
-            <button mat-raised-button color="primary" class="button-cv button-download">
+            <button
+              mat-raised-button
+              color="primary"
+              class="button-cv button-download"
+            >
               {{ "info.downloadCV" | translate }}
             </button>
           </div>
@@ -95,10 +99,7 @@
               <div
                 [innerHTML]="'resume.education.university' | translate"
               ></div>
-              <div
-                style="margin-left: 15px"
-                [innerHTML]="'resume.education.direction' | translate"
-              ></div>
+              <div [innerHTML]="'resume.education.direction' | translate"></div>
             </mat-card-content>
           </mat-card>
         </div>
@@ -131,7 +132,8 @@
               {{ "resume.languages.engLanguage" | translate }}
               <br /><mat-progress-bar
                 mode="determinate"
-                value="70" [color]="'aqua'"
+                value="70"
+                [color]="'aqua'"
               ></mat-progress-bar>
             </mat-card-content>
           </mat-card>
