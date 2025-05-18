@@ -30,21 +30,51 @@ export function HttpLoaderFactory(http: HttpClient) {
 })
 export class AppComponent {
   title = 'angular_resume';
-  lang: string = 'en'; // Default language
+
+  // Define the type for language keys
+  lang: 'en' | 'pl' = 'en'; // Default language
+
+  // Define the type for pdfPaths
+  private readonly pdfPaths: Record<'en' | 'pl', string> = {
+    en: 'assets/pdf/Resume_YShkarban.pdf',
+    pl: 'assets/pdf/CV_YShkarban.pdf',
+  };
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang(this.lang);
   }
 
-  downloadCV() {
-    let link = document.createElement('a');
-    link.download = 'CV.pdf';
-    link.href = '../assets/CV.pdf';
-    link.click();
+  toggleLanguage(): void {
+    this.lang = this.lang === 'en' ? 'pl' : 'en';
+    this.translate.use(this.lang);
   }
 
-  toggleLanguage(): void {
-    this.lang = this.lang === 'en' ? 'pl' : 'en'; // Toggle between 'en' and 'pl'
-    this.translate.use(this.lang); // Switch language dynamically
+  downloadCV(): void {
+    const filePath = this.pdfPaths[this.lang]; // No error now
+
+    fetch(filePath)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`File not found: ${filePath}`);
+        }
+        return response.blob();
+      })
+      .then((blob) => this.downloadFile(blob, filePath))
+      .catch((error) => console.error('Error downloading file:', error));
+  }
+
+  private downloadFile(blob: Blob, filePath: string): void {
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = this.extractFileName(filePath);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  }
+
+  private extractFileName(filePath: string): string {
+    return filePath.split('/').pop() || 'download.pdf';
   }
 }
