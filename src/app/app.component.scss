@@ -51,9 +51,15 @@
   min-width: -webkit-fill-available;
 }
 
-
 @media (max-width: 550px) {
   .cv-details {
     min-width: 300px;
   }
+}
+
+.spaced-lines br {
+  line-height: 2; /* Adjust the value as needed */
+}
+mat-progress-bar {
+  height: 3px;
 }
