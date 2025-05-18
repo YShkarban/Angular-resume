@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "Yaroslav Shkarban",
-    "position": "Software Developer",
+    "position": ".Net Software Developer",
     "birthday": "March 13, 1996",
     "location": "Lodz, Poland",
     "email": "yarik.shkarban@gmail.com",
@@ -10,14 +10,18 @@
   },
   "resume": {
     "experience": {
-      "title": "Experience",
-      "firstJob": "<strong>Rossmann S.P.z.o.o. - Lodz, Poland</strong><br>Senior Software Developer, July 2018 - Present(6 years)",
-      "firstContent": "• Started as an intern and progressed to junior, mid, and senior developer roles.<br/>• Developed desktop applications using WPF C# with DevExpress library.<br/>• Transitioned to creating microservices (REST API) in C#.<br/>• Worked on projects using Angular with Material UI."
+      "title": "Work Experience",
+      "firstJob": "Rossmann SDP - Lodz, Poland",
+      "firstJobPosition": "Senior Software Developer(.NET Software Developer/Angular)",
+      "firstJobTimeline": "July 2017 - Present(8 years)",
+      "firstContent": "• Design and implementation of web applications and microservices (end-to-end: backend + frontend)<br/>• Building new systems from scratch, including application architecture and integration design<br/>• Optimization of critical processes and code in terms performance<br/>• Deployments based on Docker, Kubernetes, CI/CD, Azure DevOps<br/>• Mentoring, code review, and implementation of technological changes<br/>• Collaboration with business and analytics teams"
     },
     "education": {
       "title": "Education",
-      "university": "<strong>Technical University of Lodz – Poland</strong><br />Bachelor’s degree, June 2019",
-      "direction": "Mechatronics <br />Degree Project: Simulation of Autonomous Drone Navigation in Space."
+      "university": "Technical University of Lodz – Poland",
+      "direction": "Bachelor’s degree, Mechatronics",
+      "degree": "Degree Project: Simulation of Autonomous Drone Navigation in Space.",
+      "finishYear": "2013 - 2017"
     },
     "languages": {
       "title": "Languages",
@@ -27,11 +31,15 @@
       "engLanguage": "English"
     },
     "technologies": {
-      "title": "Technologies",
-      "database": "<h3><strong>DataBase</strong></h3>• Transact-SQL (SQL Server), PL/SQL (Oracle)<br />• MongoDB <br />• Redis",
-      "frontEnd": "<h3><strong>FrontEnd</strong></h3>• Angular, Typescript<br />• Bootstrap, Material-UI <br />• DevExtreme, DevExpress",
-      "backEnd": "<h3><strong>BackEnd</strong></h3>• C#<br />• Rest API <br />• Clean Architecture, CQRS <br />• Hangfire",
-      "others": "<h3><strong>Other</strong></h3>• Kubernetes <br />• Confluence, TFS"
+      "title": "Skills",
+      "devops": "• DevOps: Docker, Kubernetes, Azure DevOps, CI/CD, PowerShell, YAML",
+      "frontEnd": "• Frontend: Angular, Typescript, Razor, DevExtreme, DevExpress, Html, CSS, Bootstrap, Material-UI",
+      "backEnd": "• Backend: C#, .NET 6/8, ASP.NET Core, Web API, EF Core, T-SQL, MongoDB, Oracle Database, REST API",
+      "others": "• Other: GIT, Redis, Hangfire, SonarQube, DataDog, BlueOptima, Confluence, TFS"
+    },
+    "courses": {
+      "title": "Courses",
+      "list": "• Domain-driven design (2025) <br />• Kubernetes: container orchestration (2023) <br />• MongoDB database administration <br />• Angular in Space (2023) <br />• Advanced C# programming (2022)"
     }
   }
 }
