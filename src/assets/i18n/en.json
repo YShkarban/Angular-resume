@@ -34,8 +34,8 @@
       "title": "Skills",
       "devops": "• DevOps: Docker, Kubernetes, Azure DevOps, CI/CD, PowerShell, YAML",
       "frontEnd": "• Frontend: Angular, Typescript, Razor, DevExtreme, DevExpress, Html, CSS, Bootstrap, Material-UI",
-      "backEnd": "• Backend: C#, .NET 6/8, ASP.NET Core, Web API, EF Core, T-SQL, MongoDB, Oracle Database, REST API",
-      "others": "• Other: GIT, Redis, Hangfire, SonarQube, DataDog, BlueOptima, Confluence, TFS"
+      "backEnd": "• Backend: C#, .NET 6/8, ASP.NET Core, Web API, REST API, EF Core, T-SQL, MongoDB, Oracle Database",
+      "others": "• Other: GIT, Redis, Hangfire, SonarQube, DataDog, BlueOptima, Confluence, TFS, BigQuery"
     },
     "courses": {
       "title": "Courses",
